@@ -1,0 +1,17 @@
+name: RunJobsNewShell
+
+on: [push]
+
+jobs:
+  newshellmachin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Basic Command
+        run: pwd
+      - name: Python command
+        run: |
+          import platform()
+          print(platform.processor())
+        shell: python
+          
+
