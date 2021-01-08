@@ -16,6 +16,7 @@ jobs:
 
   newwindowsmachine:
     runs-on: windows-latest
+    needs: [newshellmachin]
     steps:
       - name: find location
         run: Get-Location
