@@ -14,4 +14,8 @@ jobs:
           print(platform.processor())
         shell: python
 
-
+  newwindowsmachine:
+    runs-on: windows-latest
+    steps:
+      - name: find location
+        run: Get-Location
