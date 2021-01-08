@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Command Echo
-        run: echo "Heeloll!!!!!!"
+        run: eccho "Heeloll!!!!!!"
       - name: Mutiline commands
         run: |
           npm -v
