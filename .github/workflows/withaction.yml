@@ -12,7 +12,7 @@ jobs:
         with:
             who-to-greet: Vipin
       - name: Timeprint
-        run: echo "{{ steps.Action-demo.outputs.time  }}"
+        run: echo "{{ steps.Action-demo.outputs.timestamp  }}"
 
 
 
