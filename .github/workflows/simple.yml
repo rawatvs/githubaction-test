@@ -1,14 +1,14 @@
-name: Shell commands
+# name: Shell commands
 
-on: [pull_request, push]
+# on: [pull_request, push]
 
-jobs:
-  runvmmachine:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run Command Echo
-        run: echo "Heeloll!!!!!!"
-      - name: Mutiline commands
-        run: |
-          npm -v
-          node -v
+# jobs:
+#   runvmmachine:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Run Command Echo
+#         run: echo "Heeloll!!!!!!"
+#       - name: Mutiline commands
+#         run: |
+#           npm -v
+#           node -v

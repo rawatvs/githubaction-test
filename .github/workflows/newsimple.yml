@@ -1,22 +1,22 @@
-name: RunJobsNewShell
+# name: RunJobsNewShell
 
-on: [push]
+# on: [push]
 
-jobs:
-  newshellmachin:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run Basic Command
-        run: pwd
-      - name: Python command
-        run: |
-          import platform
-          print(platform.processor())
-        shell: python
+# jobs:
+#   newshellmachin:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Run Basic Command
+#         run: pwd
+#       - name: Python command
+#         run: |
+#           import platform
+#           print(platform.processor())
+#         shell: python
 
-  newwindowsmachine:
-    runs-on: windows-latest
-    needs: [newshellmachin]
-    steps:
-      - name: find location
-        run: Get-Location
+#   newwindowsmachine:
+#     runs-on: windows-latest
+#     needs: [newshellmachin]
+#     steps:
+#       - name: find location
+#         run: Get-Location

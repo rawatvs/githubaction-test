@@ -1,0 +1,18 @@
+name: Actioncheckout
+on: [push]
+jobs:
+  Githubactioncheckout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print-Before-Action-Checkout
+        run: |
+          pwd
+          ls
+      - name: Print-After-Action-Checkout
+        uses: actions/checkout@v2.3.4
+
+      - name: Print-After-Action-Checkout
+        run: |
+          pwd
+          ls
+        

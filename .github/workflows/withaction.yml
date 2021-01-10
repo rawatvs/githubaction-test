@@ -1,18 +1,18 @@
-name: withactiondemo
+# name: withactiondemo
 
-on: [push]
+# on: [push]
 
-jobs:
-  action-demo:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Welcome
-        id: Action-demo
-        uses: actions/hello-world-javascript-action@v1
-        with:
-            who-to-greet: Vipin
-      - name: Timeprint
-        run: echo "${{ steps.Action-demo.outputs.time  }}"
+# jobs:
+#   action-demo:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Welcome
+#         id: Action-demo
+#         uses: actions/hello-world-javascript-action@v1
+#         with:
+#             who-to-greet: Vipin
+#       - name: Timeprint
+#         run: echo "${{ steps.Action-demo.outputs.time  }}"
 
 
 
