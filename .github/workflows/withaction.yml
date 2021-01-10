@@ -1,0 +1,19 @@
+name: withactiondemo
+
+on: [push]
+
+jobs:
+  Actiondemo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome
+      - id: Action
+      - uses: actions/hello-world-javascript-action@v1
+      - with:
+          who-to-greet: Vipin
+      - name: Timeprint
+      - run: echo "{{steps.Action.outputs.time}}"
+
+
+
+
